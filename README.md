@@ -44,8 +44,27 @@ Although inspired by a restaurant brand, this project serves as a portfolio piec
 
 ## 📸 Project Preview
 
-(Add screenshots here later.)
+### 🏠 Homepage
 
+![Homepage](images/screenshots/hero.png)
+
+---
+
+### 🍽️ Signature Menu
+
+![Menu](images/screenshots/menu.png)
+
+---
+
+### 💬 Project Enquiry
+
+![Enquiry](images/screenshots/enquiry.png)
+
+---
+
+### 📍 Footer & Branding
+
+![Footer](images/screenshots/footer.png)
 ---
 
 ## 🚀 Future Improvements
