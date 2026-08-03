@@ -1,0 +1,880 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffron Town - Where Every Bite Brings People Together</title>
+    <meta name="description" content="Saffron Town - A premium family-friendly restaurant serving delicious Indian, Chinese, and Tandoori cuisine in Haldia. Book your table online today!">
+    <meta name="keywords" content="Saffron Town, restaurant, Haldia, Indian food, Chinese food, Tandoori, fine dining, family restaurant, online booking, premium restaurant">
+   <link rel="stylesheet" href="style.css">
+
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <!-- Premium Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <img src="images/logo.png" alt="Saffron Town Logo" class="loader-logo">
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <nav id="navbar">
+        <div class="container">
+           <a href="#hero" class="logo">
+    <img src="images/logo.png" alt="Saffron Town Logo" class="logo-img">
+
+    <div class="logo-text">
+        <span class="logo-title">SAFFRON TOWN</span>
+        <span class="logo-tagline">Authentic Flavours</span>
+    </div>
+</a>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#why-choose-us">Why Us</a>
+                <a href="#signature-dishes">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#booking">Get a Website</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="nav-utilities">
+                <button id="mode-toggle" class="icon-button" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i> <!-- Sun icon for light mode, Moon for dark -->
+                </button>
+                <div class="hamburger" aria-label="Open Navigation Menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu (Hidden by default) -->
+    <div id="mobile-menu">
+        <a href="#hero">Home</a>
+        <a href="#why-choose-us">Why Us</a>
+        <a href="#signature-dishes">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#booking">Get a Website</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <button id="mobile-mode-toggle" class="button primary-button">
+            <i class="fas fa-sun"></i> Toggle Mode
+        </button>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+           <div class="hero-content">
+
+    <p class="hero-kicker">
+        AUTHENTIC INDIAN • CHINESE • TANDOORI
+    </p>
+
+ <h1>SAFFRON TOWN</h1>
+
+    <p class="tagline">
+        Authentic Flavours.<br>
+        Warm Hospitality.<br>
+        Unforgettable Moments.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#booking" class="button primary-button">
+            Get a Website Like This
+        </a>
+
+        <a href="#signature-dishes" class="button secondary-button">
+            Explore Menu
+        </a>
+    </div>
+
+</div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="section-padding reveal">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <div class="grid-3-columns">
+                    <div class="feature-card">
+                        <i class="fas fa-utensils icon-large"></i>
+                        <h3>Exquisite Cuisine</h3>
+                        <p>Experience a delightful fusion of Indian, Chinese, and Tandoori flavors crafted by our master chefs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-family icon-large"></i>
+                        <h3>Cozy Atmosphere</h3>
+                        <p>Our warm and inviting ambiance is perfect for family gatherings, romantic dinners, and friendly meetups.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-award icon-large"></i>
+                        <h3>Unmatched Quality</h3>
+                        <p>We use only the freshest, high-quality ingredients to ensure every dish is a culinary masterpiece.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Dishes Section -->
+        <section id="signature-dishes" class="section-padding bg-dark reveal">
+            <div class="container">
+                <h2 class="section-title">
+    Signature Creations
+</h2>
+
+<p class="section-subtitle">
+    Handcrafted with authentic recipes, premium ingredients, and unforgettable flavours.
+</p>
+                <div class="filter-buttons">
+                    <button class="button filter-button active" data-filter="all">All</button>
+                    <button class="button filter-button" data-filter="indian">Indian</button>
+                    <button class="button filter-button" data-filter="chinese">Chinese</button>
+                    <button class="button filter-button" data-filter="tandoori">Tandoori</button>
+                </div>
+                <div class="grid-2-columns menu-grid">
+                    <div class="menu-item reveal" data-category="tandoori">
+
+    <div class="menu-image">
+
+        <img src="images/menu/tandoori-chicken.jpg" alt="Tandoori Chicken">
+
+        <span class="chef-badge">
+            ⭐ Chef's Special
+        </span>
+
+    </div>
+
+    <div class="item-details">
+
+        <div class="menu-header">
+
+            <h3>Tandoori Chicken</h3>
+
+            <span class="price">
+                ₹450
+            </span>
+
+        </div>
+
+        <p>
+            Classic marinated chicken cooked to perfection in a traditional tandoor.
+        </p>
+
+        <a href="#" class="view-dish">
+            Explore Dish →
+        </a>
+
+    </div>
+
+</div>
+                  <div class="menu-item reveal" data-category="chinese">
+
+    <div class="menu-image">
+
+        <img src="images/menu/chilli-chicken.jpg" alt="Chilli Chicken">
+
+    </div>
+
+    <div class="item-details">
+
+        <div class="menu-header">
+
+            <h3>Chilli Chicken</h3>
+
+            <span class="price">
+                ₹380
+            </span>
+
+        </div>
+
+        <p>
+            Spicy and flavorful chicken stir-fried with bell peppers and onions.
+        </p>
+
+        <a href="#" class="view-dish">
+            Explore Dish →
+        </a>
+
+    </div>
+
+</div>
+                    <div class="menu-item reveal" data-category="tandoori">
+
+    <div class="menu-image">
+        <img src="images/menu/chicken-pahadi.jpg" alt="Chicken Pahadi">
+    </div>
+
+    <div class="item-details">
+
+        <div class="menu-header">
+            <h3>Chicken Pahadi</h3>
+            <span class="price">₹420</span>
+        </div>
+
+        <p>
+            Green marinated chicken skewers with a unique blend of herbs and spices.
+        </p>
+
+        <a href="#" class="view-dish">
+            Explore Dish →
+        </a>
+
+    </div>
+
+</div>
+                   <div class="menu-item reveal" data-category="indian">
+
+    <div class="menu-image">
+
+        <img src="images/menu/paneer-tikka.jpg" alt="Paneer Tikka">
+
+        <span class="chef-badge">
+            ⭐ Chef's Special
+        </span>
+
+    </div>
+
+    <div class="item-details">
+
+        <div class="menu-header">
+            <h3>Paneer Tikka</h3>
+            <span class="price">₹350</span>
+        </div>
+
+        <p>
+            Grilled cottage cheese cubes marinated in yogurt and aromatic spices.
+        </p>
+
+        <a href="#" class="view-dish">
+            Explore Dish →
+        </a>
+
+    </div>
+
+</div>
+                   <div class="menu-item reveal" data-category="indian">
+
+    <div class="menu-image">
+
+        <img src="images/menu/hara-bhara-kabab.jpg" alt="Hara Bhara Kabab">
+
+        <span class="chef-badge">
+            ⭐ Chef's Special
+        </span>
+
+    </div>
+
+    <div class="item-details">
+
+        <div class="menu-header">
+            <h3>Hara Bhara Kabab</h3>
+            <span class="price">₹320</span>
+        </div>
+
+        <p>
+            Healthy and delicious green patties made from spinach, peas, and potatoes.
+        </p>
+
+        <a href="#" class="view-dish">
+            Explore Dish →
+        </a>
+
+    </div>
+
+</div>
+                    <!-- Add more placeholder menu items for variety -->
+                   <div class="menu-item reveal" data-category="indian">
+
+    <div class="menu-image">
+        <img src="images/menu/butter-naan.jpg" alt="Butter Naan">
+    </div>
+
+    <div class="item-details">
+
+        <div class="menu-header">
+            <h3>Butter Naan</h3>
+            <span class="price">₹80</span>
+        </div>
+
+        <p>
+            Soft, fluffy bread brushed with butter, perfect with any curry.
+        </p>
+
+        <a href="#" class="view-dish">
+            Explore Dish →
+        </a>
+
+    </div>
+
+</div>
+                    <div class="menu-item reveal" data-category="chinese">
+
+    <div class="menu-image">
+        <img src="images/menu/veg-manchurian.jpg" alt="Veg Manchurian">
+    </div>
+
+    <div class="item-details">
+
+        <div class="menu-header">
+            <h3>Veg Manchurian</h3>
+            <span class="price">₹260</span>
+        </div>
+
+        <p>
+            Crispy vegetable dumplings tossed in a rich Indo-Chinese sauce.
+        </p>
+
+        <a href="#" class="view-dish">
+            Explore Dish →
+        </a>
+
+    </div>
+
+</div>
+                  <div class="menu-item reveal" data-category="tandoori">
+
+    <div class="menu-image">
+        <img src="images/menu/fish-tikka.jpg" alt="Fish Tikka">
+    </div>
+
+    <div class="item-details">
+
+        <div class="menu-header">
+            <h3>Fish Tikka</h3>
+            <span class="price">₹480</span>
+        </div>
+
+        <p>
+            Fresh fish fillets marinated in traditional spices and grilled in the tandoor.
+        </p>
+
+        <a href="#" class="view-dish">
+            Explore Dish →
+        </a>
+
+    </div>
+
+</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section id="gallery" class="section-padding reveal">
+            <div class="container">
+                <h2 class="section-title">
+    Moments at Saffron Town
+</h2>
+
+<p class="section-subtitle">
+    Experience the perfect blend of exquisite cuisine, elegant interiors, and unforgettable dining moments.
+</p>
+               <div class="gallery-grid">
+
+    <img src="images/gallery/tandoori-chicken-gallery.jpg"
+         alt="Tandoori Chicken"
+         class="gallery-item reveal"
+         data-src="images/gallery/tandoori-chicken-gallery.jpg">
+
+    <img src="images/gallery/paneer-tikka-gallery.jpg"
+         alt="Paneer Tikka"
+         class="gallery-item reveal"
+         data-src="images/gallery/paneer-tikka-gallery.jpg">
+
+    <img src="images/gallery/chilli-chicken-gallery.jpg"
+         alt="Chilli Chicken"
+         class="gallery-item reveal"
+         data-src="images/gallery/chilli-chicken-gallery.jpg">
+
+    <img src="images/gallery/hara-bhara-kabab-gallery.jpg"
+         alt="Hara Bhara Kabab"
+         class="gallery-item reveal"
+         data-src="images/gallery/hara-bhara-kabab-gallery.jpg">
+
+    <img src="images/gallery/restaurant-interior.jpg"
+         alt="Luxury Restaurant Interior"
+         class="gallery-item reveal"
+         data-src="images/gallery/restaurant-interior.jpg">
+
+    <img src="images/gallery/dining-area.jpg"
+         alt="Elegant Dining Area"
+         class="gallery-item reveal"
+         data-src="images/gallery/dining-area.jpg">
+
+    <img src="images/gallery/bar-area.jpg"
+         alt="Stylish Bar Area"
+         class="gallery-item reveal"
+         data-src="images/gallery/bar-area.jpg">
+
+    <img src="images/gallery/chef-plating.jpg"
+         alt="Chef Plating a Gourmet Dish"
+         class="gallery-item reveal"
+         data-src="images/gallery/chef-plating.jpg">
+
+</div>
+            </div>
+        </section>
+
+        <!-- Fullscreen Gallery Overlay -->
+        <div id="gallery-overlay">
+            <span id="close-overlay">&times;</span>
+            <img id="full-image" src="" alt="Full size image">
+        </div>
+
+        <!-- Customer Reviews Section -->
+        <section id="reviews" class="section-padding bg-dark reveal">
+            <div class="container">
+                <h2 class="section-title">
+    Guest Experiences
+</h2>
+
+<p class="section-subtitle">
+    Every meal tells a story. Here's what our guests love about Saffron Town.
+</p>
+                <div class="grid-3-columns review-grid">
+                    <div class="review-card reveal">
+
+    <div class="review-avatar">
+        RS
+    </div>
+
+    <i class="fas fa-quote-left quote-icon"></i>
+
+    <p>
+        "The Tandoori Chicken was packed with flavour, and the ambience made our dinner truly memorable. We'll definitely be visiting again."
+    </p>
+
+    <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+
+    <p class="customer-name">
+        Rahul Sharma
+    </p>
+
+    <span class="customer-role">
+        Food Blogger
+    </span>
+
+    <span class="verified-badge">
+        <i class="fas fa-check-circle"></i>
+        Verified Guest
+    </span>
+
+</div>
+                    <div class="review-card reveal">
+
+    <div class="review-avatar">
+        PS
+    </div>
+
+    <i class="fas fa-quote-left quote-icon"></i>
+
+    <p>
+        "The Chinese dishes were fresh, delicious, and beautifully presented. The staff was polite and the service was excellent."
+    </p>
+
+    <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+
+    <p class="customer-name">
+        Priya Singh
+    </p>
+
+    <span class="customer-role">
+        Regular Guest
+    </span>
+
+    <span class="verified-badge">
+        <i class="fas fa-check-circle"></i>
+        Verified Guest
+    </span>
+
+</div>
+                    <div class="review-card reveal">
+
+    <div class="review-avatar">
+        AP
+    </div>
+
+    <i class="fas fa-quote-left quote-icon"></i>
+
+    <p>
+        "The Paneer Tikka was one of the best I've had. Great food, warm hospitality, and a perfect place for family dinners."
+    </p>
+
+    <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+
+    <p class="customer-name">
+        Amit Patel
+    </p>
+
+    <span class="customer-role">
+        Local Guide
+    </span>
+
+    <span class="verified-badge">
+        <i class="fas fa-check-circle"></i>
+        Verified Guest
+    </span>
+
+</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Online Table Booking Section -->
+        <section id="booking" class="section-padding reveal">
+            <div class="container">
+                <h2 class="section-title">
+Let's Build Your Restaurant Website
+</h2>
+<p class="section-subtitle">
+Love this website? Let's build a premium website tailored for your restaurant, café, hotel, or food business.
+</p>
+                <form id="project-enquiry-form" class="reservation-form">
+
+    <div class="form-grid">
+
+        <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="clientName" required placeholder="John Doe">
+        </div>
+
+        <div class="form-group">
+            <label>Business Name *</label>
+            <input type="text" id="businessName" required placeholder="ABC Restaurant">
+        </div>
+
+        <div class="form-group">
+            <label>Business Type</label>
+            <select id="businessType">
+
+                <option>Restaurant</option>
+                <option>Cafe</option>
+                <option>Hotel</option>
+                <option>Cloud Kitchen</option>
+                <option>Bakery</option>
+                <option>Other</option>
+
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="phoneNumber" required placeholder="+91 98XXXXXXXX">
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="emailAddress" placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+            <label>Estimated Budget</label>
+
+            <select id="budget">
+
+                <option>Under ₹15,000</option>
+                <option>₹15,000 - ₹30,000</option>
+                <option>₹30,000 - ₹50,000</option>
+                <option>Above ₹50,000</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Project Details</label>
+
+        <textarea
+            id="projectDetails"
+            rows="6"
+            placeholder="Tell me about your business and the type of website you'd like..."
+        ></textarea>
+
+    </div>
+
+    <button type="submit" class="button primary-button">
+
+    <i class="fab fa-whatsapp"></i>
+    Send on WhatsApp
+
+</button>
+
+</form>
+            </div>
+        </section>
+
+        <!-- Contact & Google Maps Section -->
+        <section id="contact" class="section-padding bg-dark reveal">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="grid-2-columns contact-grid">
+                    <div class="contact-info reveal">
+                        <h3>Contact Details</h3>
+                        <p><i class="fas fa-map-marker-alt icon-small"></i> Mathura, Uttar Pradesh, India</p>
+
+<p>
+    <i class="fas fa-phone icon-small"></i>
+    <a href="tel:+918077420632">+91 80774 20632</a>
+</p>
+
+<p>
+    <i class="fas fa-envelope icon-small"></i>
+    <a href="mailto:lakshyajaswal5@gmail.com">
+        lakshyajaswal5@gmail.com
+    </a>
+</p>
+                        <h3>Opening Hours</h3>
+                        <p><i class="fas fa-clock icon-small"></i> 10:00 AM – 10:00 PM (Daily)</p>
+                        <div class="social-links">
+                           <a href="https://www.linkedin.com/in/lakshya-jaswal-4424381a8/"
+   target="_blank"
+   aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+</a>
+
+<a href="https://github.com/lakshyaWEB05"
+   target="_blank"
+   aria-label="GitHub">
+    <i class="fab fa-github"></i>
+</a>
+                        </div>
+                    </div>
+                   <div class="service-area-card reveal">
+
+    <div class="service-icon">
+        🌍
+    </div>
+
+    <h3>Serving Clients Across India</h3>
+
+    <p class="service-subtitle">
+        Professional website design & development services delivered completely online.
+    </p>
+
+    <div class="service-list">
+
+        <div class="service-item">✔ Restaurant Websites</div>
+
+        <div class="service-item">✔ Café Websites</div>
+
+        <div class="service-item">✔ Hotel Websites</div>
+
+        <div class="service-item">✔ Cloud Kitchen Websites</div>
+
+        <div class="service-item">✔ Food Startup Websites</div>
+
+    </div>
+
+    <div class="service-divider"></div>
+
+    <h4>Available On</h4>
+
+    <p>
+        📱 WhatsApp<br>
+        💻 Google Meet<br>
+        🎥 Zoom
+    </p>
+
+    <div class="response-box">
+
+        ⚡ Typical Response Time
+
+        <br><br>
+
+        <strong>Within 24 Hours</strong>
+
+    </div>
+
+</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section (near footer) -->
+        <section id="about" class="section-padding reveal">
+            <div class="container">
+                <h2 class="section-title">About This Project</h2>
+                <div class="about-content reveal">
+
+   <p>
+    <strong>Saffron Town</strong> is a premium restaurant website concept designed and developed by <strong>Lakshya</strong> to demonstrate <strong>modern restaurant web design</strong>, <strong>premium UI/UX</strong>, <strong>responsive development</strong>, and <strong>conversion-focused frontend development</strong>.
+</p>
+    <p>
+    This project showcases a complete restaurant website experience featuring <strong>elegant layouts</strong>, <strong>responsive design</strong>, <strong>interactive animations</strong>, <strong>WhatsApp enquiry integration</strong>, and <strong>modern frontend development practices</strong>. It reflects the <strong>quality</strong>, <strong>attention to detail</strong>, and <strong>user experience</strong> that I aim to deliver for every client.
+</p>
+
+    <div class="about-features">
+
+        <div class="feature-item">
+            ✅ Responsive Web Design
+        </div>
+
+        <div class="feature-item">
+            ✅ Premium UI / UX
+        </div>
+
+        <div class="feature-item">
+            ✅ WhatsApp Lead Generation
+        </div>
+
+        <div class="feature-item">
+            ✅ Mobile-First Development
+        </div>
+
+        <div class="feature-item">
+            ✅ Modern Frontend Development
+        </div>
+
+    </div>
+
+</div>
+            </div>
+      </section>
+
+<!-- Project Showcase -->
+
+<section class="project-showcase">
+
+    <div class="container">
+
+        <span class="project-label">
+            PORTFOLIO PROJECT #1
+        </span>
+
+        <h2>
+            Saffron Town — Premium Restaurant Website Concept
+        </h2>
+
+        <p>
+            Designed & Developed by <strong>Lakshya</strong>
+        </p>
+
+        <p class="project-services">
+            Premium Websites • UI/UX • Business Automation
+        </p>
+
+        <div class="project-links">
+
+            <a href="https://www.linkedin.com/in/lakshya-jaswal-4424381a8/" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/lakshyaWEB05" target="_blank">
+                GitHub
+            </a>
+
+            <a href="#booking">
+                Let's Work Together
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+    <h3>SAFFRON TOWN</h3>
+    <span class="footer-tagline">AUTHENTIC FLAVOURS</span>
+
+    <p>
+        Experience authentic flavors, warm hospitality,
+        and unforgettable dining moments crafted with passion.
+    </p>
+</div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#signature-dishes">Menu</a></li>
+                        <li><a href="#booking">Project Enquiry</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Reach Us</h4>
+                   <p>
+    <i class="fas fa-map-marker-alt"></i>
+    Mathura, Uttar Pradesh, India
+</p>
+
+<p>
+    <i class="fas fa-phone"></i>
+    <a href="tel:+918077420632">
+        +91 80774 20632
+    </a>
+</p>
+
+<p>
+    <i class="fas fa-envelope"></i>
+    <a href="mailto:lakshyajaswal5@gmail.com">
+        lakshyajaswal5@gmail.com
+    </a>
+</p>
+                </div>
+              <div class="footer-social">
+    <h4>Connect With Me</h4>
+
+    <a href="https://www.linkedin.com/in/lakshya-jaswal-4424381a8/"
+       target="_blank"
+       aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://github.com/lakshyaWEB05"
+       target="_blank"
+       aria-label="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+</div>
+            </div>
+            <div class="footer-bottom">
+              <p>
+    &copy; 2026 <strong>Saffron Town Concept</strong>.<br>
+    Designed & Developed by <strong>Lakshya</strong>.
+</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
